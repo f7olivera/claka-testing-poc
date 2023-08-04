@@ -1,4 +1,4 @@
-![image](https://github.com/f7olivera/claka-testing-poc/assets/81710086/1cf35d19-b072-4c93-a2b5-8ffeae6b15c5)# claka-testing-poc
+# claka-testing-poc
 
 ## Prerrequisitos
 Seguir las instrucciones detalladas en [este video](https://www.youtube.com/watch?v=KN1sTvvX0mM) o bien en el [README.md](https://github.com/JoanEsquivel/appium-demo) del repositorio usado en esa demostración.

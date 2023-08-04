@@ -1,5 +1,3 @@
-# claka-testing-poc
-
 ## Prerrequisitos
 Seguir las instrucciones detalladas en [este video](https://www.youtube.com/watch?v=KN1sTvvX0mM) o bien en el [README.md](https://github.com/JoanEsquivel/appium-demo) del repositorio usado en esa demostración.
 
@@ -18,7 +16,7 @@ npm install @wdio/cucumber-framework @wdio/local-runner @wdio/appium-service @wd
 
 3. Actualizar las siguientes propiedades de `wdio.conf.ts`
 - `capabilities`, para especificar el dispositivo sobre el que se van a correr los tests
-```
+```javascript
 capabilities: [
   {
     // capabilities for local Appium web tests on an Android Emulator
@@ -31,7 +29,7 @@ capabilities: [
 ],
 ```
 - `services`, para usar la instancia de appium instalada globalmente
-```
+```javascript
 services: [
   [
     'appium',
@@ -44,7 +42,7 @@ services: [
 
 4. Correr `appium-installer` para comprobar que la configuración sea correcta
 ```
-
+appium-installer
 ```
 ![image](https://github.com/f7olivera/claka-testing-poc/assets/81710086/cd33d0b3-7ab4-4db1-a2bd-10675b2d90b7)
 
@@ -53,7 +51,7 @@ services: [
 ```
 appium
 ```
-Puede que la versión ChromeDriver no sea compatible con la versión de Chrome del dispositivo. En este caso, un workaround es instalar el chromedriver *al vuelo*:
+Puede que la versión ChromeDriver no sea compatible con la versión de Chrome del dispositivo. En este caso, un workaround es instalar el chromedriver automáticamente:
 ```
 appium --allow-insecure chromedriver_autodownload
 ```

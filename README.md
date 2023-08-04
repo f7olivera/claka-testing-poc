@@ -1,7 +1,12 @@
-## Prerrequisitos
+# Tabla de contenidos
+- [Prerrequisitos](#prerrequisitos)
+- [Setup](#setup)
+- [Corriendo los tests](#corriendo-los-tests)
+
+# Prerrequisitos
 Seguir las instrucciones detalladas en [este video](https://www.youtube.com/watch?v=KN1sTvvX0mM) o bien en el [README.md](https://github.com/JoanEsquivel/appium-demo) del repositorio usado en esa demostración.
 
-## Setup
+# Setup
 1. Inicializar WebdriverIO con el siguiente comando:
 ```
 npm init wdio .
@@ -46,7 +51,7 @@ appium-installer
 ```
 ![image](https://github.com/f7olivera/claka-testing-poc/assets/81710086/cd33d0b3-7ab4-4db1-a2bd-10675b2d90b7)
 
-## Corriendo los tests
+# Corriendo los tests
 1. Dejar el server de `Appium` corriendo en una terminal:
 ```
 appium

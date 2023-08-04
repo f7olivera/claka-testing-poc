@@ -51,7 +51,7 @@ appium-installer
 ```
 appium
 ```
-Puede que la versión ChromeDriver no sea compatible con la versión de Chrome del dispositivo. En este caso, un *workaround* es instalar el chromedriver automáticamente:
+Puede que la versión de ChromeDriver no sea compatible con la versión de Chrome del dispositivo. En este caso, un *workaround* es instalar el chromedriver automáticamente:
 ```
 appium --allow-insecure chromedriver_autodownload
 ```

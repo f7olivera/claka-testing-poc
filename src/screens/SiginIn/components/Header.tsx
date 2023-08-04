@@ -1,13 +1,13 @@
 import React, { memo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import SvgLogo from 'svgs/signIn/SvgLogo';
-import { Montserrat } from 'utils/fonts';
-import SvgPerson from 'svgs/signIn/SvgPerson';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
+import SvgLogo from 'svgs/signIn/SvgLogo';
+import SvgPerson from 'svgs/signIn/SvgPerson';
+import { Montserrat } from 'utils/fonts';
 
 const Header = memo(() => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} accessibilityLabel="welcome-header">
       <SvgLogo />
       <Text style={styles.txtWelcome}>Welcome</Text>
       <Text style={styles.txtTo}>to Claka</Text>

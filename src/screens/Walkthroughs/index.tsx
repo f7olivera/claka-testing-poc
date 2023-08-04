@@ -1,18 +1,18 @@
+import { useNavigation } from '@react-navigation/native';
 import React, { memo, useCallback, useState } from 'react';
 import {
   Dimensions,
+  StatusBar,
   StyleSheet,
+  Text,
   TouchableOpacity,
   View,
-  Text,
-  StatusBar,
 } from 'react-native';
-import SvgLogo from 'svgs/walkthroughs/SvgLogo';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
-import { useNavigation } from '@react-navigation/native';
 import SvgIntro1 from 'svgs/walkthroughs/SvgIntro1';
 import SvgIntro2 from 'svgs/walkthroughs/SvgIntro2';
 import SvgIntro3 from 'svgs/walkthroughs/SvgIntro3';
+import SvgLogo from 'svgs/walkthroughs/SvgLogo';
 import { ROUTERS } from 'utils/navigation';
 
 const { width: viewportWidth } = Dimensions.get('window');
@@ -88,7 +88,10 @@ const Walkthroughs = memo(() => {
         />
       </View>
 
-      <TouchableOpacity style={styles.btnSignIn} onPress={onPress}>
+      <TouchableOpacity
+        style={styles.btnSignIn}
+        onPress={onPress}
+        accessibilityLabel="sign-in-apple-id-button">
         <Text style={styles.txtSignIn}>Sign In with Apple ID</Text>
       </TouchableOpacity>
     </View>

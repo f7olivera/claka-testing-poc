@@ -62,7 +62,11 @@ export const config: Options.Testrunner = {
     {
       // capabilities for local Appium web tests on an Android Emulator
       platformName: 'Android',
-      browserName: 'Chrome',
+      // browserName: 'Chrome',
+      'appium:app':
+        'C:/source/react-native/github/claka-testing-poc/android/app/build/outputs/apk/debug/app-debug.apk',
+      'appium:appPackage': 'com.claka',
+      'appium:appActivity': '.MainActivity',
       'appium:deviceName': 'nightwatch-android-11',
       'appium:platformVersion': '11.0',
       'appium:automationName': 'UiAutomator2',
@@ -151,7 +155,10 @@ export const config: Options.Testrunner = {
   // If you are using Cucumber you need to specify the location of your step definitions.
   cucumberOpts: {
     // <string[]> (file/dir) require files before executing features
-    require: ['./features/step-definitions/steps.ts'],
+    require: [
+      './features/step-definitions/steps.ts',
+      './features/step-definitions/claka-login.steps.ts',
+    ],
     // <boolean> show full backtrace for errors
     backtrace: false,
     // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)

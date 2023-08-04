@@ -1,11 +1,10 @@
-import React, { memo, useCallback } from 'react';
-import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import React, { memo, useCallback } from 'react';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Header from 'screens/SiginIn/components/Header';
 import Input from 'screens/SiginIn/components/Input';
-import { Montserrat } from 'utils/fonts';
 import SvgFaceId from 'svgs/signIn/SvgFaceId';
-import { getBottomSpace } from 'react-native-iphone-x-helper';
+import { Montserrat } from 'utils/fonts';
 import { ROUTERS } from 'utils/navigation';
 
 const SignIn = memo(() => {
@@ -25,7 +24,10 @@ const SignIn = memo(() => {
       <Input mt={40} placeholder={'Username'} />
       <Input mt={16} pass={true} placeholder={'Password'} />
       <View style={styles.containerSignIn}>
-        <TouchableOpacity style={styles.btnSignIn} onPress={onPressSignIn}>
+        <TouchableOpacity
+          style={styles.btnSignIn}
+          onPress={onPressSignIn}
+          accessibilityLabel="sign-in-button">
           <Text style={styles.txtSignIn}>SIGN IN</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.btnFaceId} onPress={onPressSignIn}>

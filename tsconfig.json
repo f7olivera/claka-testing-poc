@@ -15,7 +15,8 @@
       "*": ["src/*"],
       "tests": ["tests/*"],
       "@components/*": ["src/components/*"]
-    }
+    },
+    "types": ["node", "@wdio/globals/types"],
   },
   "exclude": [
     "node_modules",

@@ -64,7 +64,7 @@ appium-installer
 ![image](https://github.com/f7olivera/claka-testing-poc/assets/81710086/cd33d0b3-7ab4-4db1-a2bd-10675b2d90b7)
 
 # Corriendo los tests
-Comando para correr los tests:
+Abrir el dispositivo elegido y correr este comando:
 ```
 npm run wdio
 ```

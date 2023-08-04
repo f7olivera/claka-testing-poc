@@ -2,11 +2,11 @@
 Seguir las instrucciones detalladas en [este video](https://www.youtube.com/watch?v=KN1sTvvX0mM) o bien en el [README.md](https://github.com/JoanEsquivel/appium-demo) del repositorio usado en esa demostración.
 
 ## Setup
-Inicializar WebdriverIO con el siguiente comando:
+1. Inicializar WebdriverIO con el siguiente comando:
 ```
 npm init wdio .
 ```
-1. Responder con las siguientes respuestas:
+Responder con las siguientes respuestas:
 ![wdio configuration wizard answers](https://github.com/f7olivera/claka-testing-poc/assets/81710086/4879fb7e-35c0-4285-826a-9f5280019beb)
 
 2. Instalar las dependencias necesarias:

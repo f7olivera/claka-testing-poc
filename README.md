@@ -64,21 +64,6 @@ appium-installer
 ![image](https://github.com/f7olivera/claka-testing-poc/assets/81710086/cd33d0b3-7ab4-4db1-a2bd-10675b2d90b7)
 
 # Corriendo los tests
-
-1. Dejar el server de `Appium` corriendo en una terminal:
-
-```
-appium
-```
-
-Puede que la versión de ChromeDriver no sea compatible con la versión de Chrome del dispositivo. En este caso, un _workaround_ es instalar el chromedriver automáticamente:
-
-```
-appium --allow-insecure chromedriver_autodownload
-```
-
-2. Correr los tests:
-
 ```
 npm run wdio
 ```
